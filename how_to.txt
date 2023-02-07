@@ -1,0 +1,20 @@
+Step1 - Run the developement server inside our project using 'Python manage.py runserver'
+
+step2 - open the local host server http://127.0.0.1:8000/ in your browser.
+
+step3 - go to the registeration page by using this URL http://127.0.0.1:8000/auth/register/
+
+step4 - Enter the basic details like first_name, last_name, username, password and hit POST button. By succesful registration you'll see your registration details.
+
+step5 - go to the login page by using this URL http://127.0.0.1:8000/auth/login/
+
+step6 - Enter your login credentials to login. By succesful login you'll grt your access token.
+
+step7 - got to https://inspector.swagger.io/builder in authentication and header area paste your unique access token.
+
+step8 - In the above url are paste this http://127.0.0.1:8000/weather-info/ URL and enter the SEND button. In the below console you'll get the weather details of 30 Cities.
+
+
+Note to remember:
+
+Everytime we run the developement server the weather data get fetched and stored in our database since we're serializing the data from database, so you"ll see updated data.
