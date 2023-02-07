@@ -55,7 +55,7 @@ import requests
 
 #fetch_weather_data view function is used to fetch data from openweather using API KEY
 def fetch_weather_data(city):
-    API_KEY = '256be8862a53a742dab9658634ccb6f2'
+    API_KEY = 'your_api_key'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}'
     response = requests.get(url)
     return response.json()
